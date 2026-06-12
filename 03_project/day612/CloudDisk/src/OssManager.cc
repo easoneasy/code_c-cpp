@@ -35,7 +35,7 @@ OSSManager::OSSManager()
     string endpoint = config["endpoint"];
     string accessKeyId = config["accessKeyId"];
     string accessKeySecret = config["accessKeySecret"];
-    _bucketName = config["buketName"];
+    _bucketName = config["bucketName"];
     string region = config["region"];
 
     // 初始化网络资源
@@ -57,11 +57,15 @@ OSSManager::~OSSManager()
 }
 
 // 上传
-bool OSSManager::upload(const string &objectName,const string &data)
+bool OSSManager::upload(const string &objectName,const string &path)
 {
-    auto stream = make_shared<stringstream>((data));
-    PutObjectRequest request(_bucketName,objectName,stream);
-    auto outcome = _client->PutObject(request);
+    // auto stream = make_shared<stringstream>((data));
+    // PutObjectRequest request(_bucketName,objectName,stream);
+    // auto outcome = _client->PutObject(request);
+
+    // 从本地上传
+    auto outcome = _client->PutObject(_bucketName,objectName,path);
+
     // 错误处理
     if(!outcome.isSuccess())
     {

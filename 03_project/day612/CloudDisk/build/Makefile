@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zyt/code_c_cpp/03_project/day609program/CloudDisk
+CMAKE_SOURCE_DIR = /home/zyt/code_c_cpp/03_project/day612/CloudDisk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build
+CMAKE_BINARY_DIR = /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,77 +129,149 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-CloudDiskServer.o: CloudDiskServer.cc.o
-.PHONY : CloudDiskServer.o
+src/CloudDiskServer.o: src/CloudDiskServer.cc.o
+.PHONY : src/CloudDiskServer.o
 
 # target to build an object file
-CloudDiskServer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloudDiskServer.cc.o
-.PHONY : CloudDiskServer.cc.o
+src/CloudDiskServer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CloudDiskServer.cc.o
+.PHONY : src/CloudDiskServer.cc.o
 
-CloudDiskServer.i: CloudDiskServer.cc.i
-.PHONY : CloudDiskServer.i
+src/CloudDiskServer.i: src/CloudDiskServer.cc.i
+.PHONY : src/CloudDiskServer.i
 
 # target to preprocess a source file
-CloudDiskServer.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloudDiskServer.cc.i
-.PHONY : CloudDiskServer.cc.i
+src/CloudDiskServer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CloudDiskServer.cc.i
+.PHONY : src/CloudDiskServer.cc.i
 
-CloudDiskServer.s: CloudDiskServer.cc.s
-.PHONY : CloudDiskServer.s
+src/CloudDiskServer.s: src/CloudDiskServer.cc.s
+.PHONY : src/CloudDiskServer.s
 
 # target to generate assembly for a file
-CloudDiskServer.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloudDiskServer.cc.s
-.PHONY : CloudDiskServer.cc.s
+src/CloudDiskServer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CloudDiskServer.cc.s
+.PHONY : src/CloudDiskServer.cc.s
 
-CryptoUtil.o: CryptoUtil.cc.o
-.PHONY : CryptoUtil.o
+src/CryptoUtil.o: src/CryptoUtil.cc.o
+.PHONY : src/CryptoUtil.o
 
 # target to build an object file
-CryptoUtil.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CryptoUtil.cc.o
-.PHONY : CryptoUtil.cc.o
+src/CryptoUtil.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CryptoUtil.cc.o
+.PHONY : src/CryptoUtil.cc.o
 
-CryptoUtil.i: CryptoUtil.cc.i
-.PHONY : CryptoUtil.i
+src/CryptoUtil.i: src/CryptoUtil.cc.i
+.PHONY : src/CryptoUtil.i
 
 # target to preprocess a source file
-CryptoUtil.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CryptoUtil.cc.i
-.PHONY : CryptoUtil.cc.i
+src/CryptoUtil.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CryptoUtil.cc.i
+.PHONY : src/CryptoUtil.cc.i
 
-CryptoUtil.s: CryptoUtil.cc.s
-.PHONY : CryptoUtil.s
+src/CryptoUtil.s: src/CryptoUtil.cc.s
+.PHONY : src/CryptoUtil.s
 
 # target to generate assembly for a file
-CryptoUtil.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CryptoUtil.cc.s
-.PHONY : CryptoUtil.cc.s
+src/CryptoUtil.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CryptoUtil.cc.s
+.PHONY : src/CryptoUtil.cc.s
 
-main.o: main.cc.o
-.PHONY : main.o
+src/FileHandler.o: src/FileHandler.cc.o
+.PHONY : src/FileHandler.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cc.o
-.PHONY : main.cc.o
+src/FileHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/FileHandler.cc.o
+.PHONY : src/FileHandler.cc.o
 
-main.i: main.cc.i
-.PHONY : main.i
+src/FileHandler.i: src/FileHandler.cc.i
+.PHONY : src/FileHandler.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cc.i
-.PHONY : main.cc.i
+src/FileHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/FileHandler.cc.i
+.PHONY : src/FileHandler.cc.i
 
-main.s: main.cc.s
-.PHONY : main.s
+src/FileHandler.s: src/FileHandler.cc.s
+.PHONY : src/FileHandler.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cc.s
-.PHONY : main.cc.s
+src/FileHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/FileHandler.cc.s
+.PHONY : src/FileHandler.cc.s
+
+src/OssManager.o: src/OssManager.cc.o
+.PHONY : src/OssManager.o
+
+# target to build an object file
+src/OssManager.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OssManager.cc.o
+.PHONY : src/OssManager.cc.o
+
+src/OssManager.i: src/OssManager.cc.i
+.PHONY : src/OssManager.i
+
+# target to preprocess a source file
+src/OssManager.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OssManager.cc.i
+.PHONY : src/OssManager.cc.i
+
+src/OssManager.s: src/OssManager.cc.s
+.PHONY : src/OssManager.s
+
+# target to generate assembly for a file
+src/OssManager.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OssManager.cc.s
+.PHONY : src/OssManager.cc.s
+
+src/UserHandler.o: src/UserHandler.cc.o
+.PHONY : src/UserHandler.o
+
+# target to build an object file
+src/UserHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/UserHandler.cc.o
+.PHONY : src/UserHandler.cc.o
+
+src/UserHandler.i: src/UserHandler.cc.i
+.PHONY : src/UserHandler.i
+
+# target to preprocess a source file
+src/UserHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/UserHandler.cc.i
+.PHONY : src/UserHandler.cc.i
+
+src/UserHandler.s: src/UserHandler.cc.s
+.PHONY : src/UserHandler.s
+
+# target to generate assembly for a file
+src/UserHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/UserHandler.cc.s
+.PHONY : src/UserHandler.cc.s
+
+src/main.o: src/main.cc.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cc.o
+.PHONY : src/main.cc.o
+
+src/main.i: src/main.cc.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cc.i
+.PHONY : src/main.cc.i
+
+src/main.s: src/main.cc.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cc.s
+.PHONY : src/main.cc.s
 
 # Help Target
 help:
@@ -210,15 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
-	@echo "... CloudDiskServer.o"
-	@echo "... CloudDiskServer.i"
-	@echo "... CloudDiskServer.s"
-	@echo "... CryptoUtil.o"
-	@echo "... CryptoUtil.i"
-	@echo "... CryptoUtil.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/CloudDiskServer.o"
+	@echo "... src/CloudDiskServer.i"
+	@echo "... src/CloudDiskServer.s"
+	@echo "... src/CryptoUtil.o"
+	@echo "... src/CryptoUtil.i"
+	@echo "... src/CryptoUtil.s"
+	@echo "... src/FileHandler.o"
+	@echo "... src/FileHandler.i"
+	@echo "... src/FileHandler.s"
+	@echo "... src/OssManager.o"
+	@echo "... src/OssManager.i"
+	@echo "... src/OssManager.s"
+	@echo "... src/UserHandler.o"
+	@echo "... src/UserHandler.i"
+	@echo "... src/UserHandler.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

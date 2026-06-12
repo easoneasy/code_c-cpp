@@ -1,4 +1,4 @@
-# Install script for directory: /home/zyt/code_c_cpp/03_project/day609program/CloudDisk
+# Install script for directory: /home/zyt/code_c_cpp/03_project/day612/CloudDisk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

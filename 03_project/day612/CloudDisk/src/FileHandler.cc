@@ -2,6 +2,7 @@
 #include "../include/CloudDiskServer.h"
 #include "../include/CryptoUtil.h"
 #include "../include/OssManager.h"
+#include "../include/RabbitMQ.h"
 #include <wfrest/HttpServer.h>
 #include <wfrest/HttpDef.h>
 #include <wfrest/HttpMsg.h>
@@ -152,18 +153,29 @@ void file_upload_handler(const HttpReq *req,HttpResp *resp)
     // 计算文件的哈希值
     string hashcode = CryptoUtil::generate_hashcode(file_data.c_str(), file_data.size());
     // 判断存储目录是否存在
-    // ensure_storage_dir();
+    ensure_storage_dir();
     // 本地存储文件
-    // string basename = STORAGE_DIR +"/" + hashcode;
-    // resp->Save(basename,file_data);
+    string basename = STORAGE_DIR +"/" + hashcode;
+    cout << "[basename]" << basename << endl;
+    resp->Save(basename,file_data);
+
+    // 发送消息队列
+    bool isSend = RabbitMQ::getInstance().RabbitProducer(hashcode, basename);
+    if(!isSend)
+    {
+        send_error(resp, 400, "发送消息失败");
+    }
+
     // 单例对象，将文件的哈希与文件内容传给单例对象
     // 上传到云存储
-    bool isUpload = OSSManager::getInstance().upload(hashcode, file_data);
-    if(!isUpload)
-    {
-        send_error(resp, 400, "云备份失败");
-        return;
-    }
+    // 异步上传，还没存储到本地无法上传到阿里云
+    // 需要消息队列  RabbitMQ
+    // bool isUpload = OSSManager::getInstance().upload(hashcode, basename);
+    // if(!isUpload)
+    // {
+    //     send_error(resp, 400, "云备份失败");
+    //     return;
+    // }
     //
     // 插入数据库
     string sql = "insert into tbl_file (uid,filename,hashcode,size) values("

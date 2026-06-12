@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "CryptoUtil.h"
+#include "../include/CryptoUtil.h"
 
 using namespace std;
 

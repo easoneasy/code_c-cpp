@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zyt/code_c_cpp/03_project/day609program/CloudDisk
+CMAKE_SOURCE_DIR = /home/zyt/code_c_cpp/03_project/day612/CloudDisk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build
+CMAKE_BINARY_DIR = /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -69,63 +69,111 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
-CMakeFiles/server.dir/CryptoUtil.cc.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/CryptoUtil.cc.o: ../CryptoUtil.cc
-CMakeFiles/server.dir/CryptoUtil.cc.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/CryptoUtil.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/CryptoUtil.cc.o -MF CMakeFiles/server.dir/CryptoUtil.cc.o.d -o CMakeFiles/server.dir/CryptoUtil.cc.o -c /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/CryptoUtil.cc
+CMakeFiles/server.dir/src/main.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/main.cc.o: ../src/main.cc
+CMakeFiles/server.dir/src/main.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/main.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/main.cc.o -MF CMakeFiles/server.dir/src/main.cc.o.d -o CMakeFiles/server.dir/src/main.cc.o -c /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/main.cc
 
-CMakeFiles/server.dir/CryptoUtil.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/CryptoUtil.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/CryptoUtil.cc > CMakeFiles/server.dir/CryptoUtil.cc.i
+CMakeFiles/server.dir/src/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/main.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/main.cc > CMakeFiles/server.dir/src/main.cc.i
 
-CMakeFiles/server.dir/CryptoUtil.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/CryptoUtil.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/CryptoUtil.cc -o CMakeFiles/server.dir/CryptoUtil.cc.s
+CMakeFiles/server.dir/src/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/main.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/main.cc -o CMakeFiles/server.dir/src/main.cc.s
 
-CMakeFiles/server.dir/CloudDiskServer.cc.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/CloudDiskServer.cc.o: ../CloudDiskServer.cc
-CMakeFiles/server.dir/CloudDiskServer.cc.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/CloudDiskServer.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/CloudDiskServer.cc.o -MF CMakeFiles/server.dir/CloudDiskServer.cc.o.d -o CMakeFiles/server.dir/CloudDiskServer.cc.o -c /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/CloudDiskServer.cc
+CMakeFiles/server.dir/src/CloudDiskServer.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/CloudDiskServer.cc.o: ../src/CloudDiskServer.cc
+CMakeFiles/server.dir/src/CloudDiskServer.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/CloudDiskServer.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/CloudDiskServer.cc.o -MF CMakeFiles/server.dir/src/CloudDiskServer.cc.o.d -o CMakeFiles/server.dir/src/CloudDiskServer.cc.o -c /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CloudDiskServer.cc
 
-CMakeFiles/server.dir/CloudDiskServer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/CloudDiskServer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/CloudDiskServer.cc > CMakeFiles/server.dir/CloudDiskServer.cc.i
+CMakeFiles/server.dir/src/CloudDiskServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/CloudDiskServer.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CloudDiskServer.cc > CMakeFiles/server.dir/src/CloudDiskServer.cc.i
 
-CMakeFiles/server.dir/CloudDiskServer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/CloudDiskServer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/CloudDiskServer.cc -o CMakeFiles/server.dir/CloudDiskServer.cc.s
+CMakeFiles/server.dir/src/CloudDiskServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/CloudDiskServer.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CloudDiskServer.cc -o CMakeFiles/server.dir/src/CloudDiskServer.cc.s
 
-CMakeFiles/server.dir/main.cc.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/main.cc.o: ../main.cc
-CMakeFiles/server.dir/main.cc.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/main.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/main.cc.o -MF CMakeFiles/server.dir/main.cc.o.d -o CMakeFiles/server.dir/main.cc.o -c /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/main.cc
+CMakeFiles/server.dir/src/CryptoUtil.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/CryptoUtil.cc.o: ../src/CryptoUtil.cc
+CMakeFiles/server.dir/src/CryptoUtil.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/CryptoUtil.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/CryptoUtil.cc.o -MF CMakeFiles/server.dir/src/CryptoUtil.cc.o.d -o CMakeFiles/server.dir/src/CryptoUtil.cc.o -c /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CryptoUtil.cc
 
-CMakeFiles/server.dir/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/main.cc > CMakeFiles/server.dir/main.cc.i
+CMakeFiles/server.dir/src/CryptoUtil.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/CryptoUtil.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CryptoUtil.cc > CMakeFiles/server.dir/src/CryptoUtil.cc.i
 
-CMakeFiles/server.dir/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/main.cc -o CMakeFiles/server.dir/main.cc.s
+CMakeFiles/server.dir/src/CryptoUtil.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/CryptoUtil.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CryptoUtil.cc -o CMakeFiles/server.dir/src/CryptoUtil.cc.s
+
+CMakeFiles/server.dir/src/UserHandler.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/UserHandler.cc.o: ../src/UserHandler.cc
+CMakeFiles/server.dir/src/UserHandler.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/UserHandler.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/UserHandler.cc.o -MF CMakeFiles/server.dir/src/UserHandler.cc.o.d -o CMakeFiles/server.dir/src/UserHandler.cc.o -c /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/UserHandler.cc
+
+CMakeFiles/server.dir/src/UserHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/UserHandler.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/UserHandler.cc > CMakeFiles/server.dir/src/UserHandler.cc.i
+
+CMakeFiles/server.dir/src/UserHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/UserHandler.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/UserHandler.cc -o CMakeFiles/server.dir/src/UserHandler.cc.s
+
+CMakeFiles/server.dir/src/FileHandler.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/FileHandler.cc.o: ../src/FileHandler.cc
+CMakeFiles/server.dir/src/FileHandler.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/src/FileHandler.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/FileHandler.cc.o -MF CMakeFiles/server.dir/src/FileHandler.cc.o.d -o CMakeFiles/server.dir/src/FileHandler.cc.o -c /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/FileHandler.cc
+
+CMakeFiles/server.dir/src/FileHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/FileHandler.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/FileHandler.cc > CMakeFiles/server.dir/src/FileHandler.cc.i
+
+CMakeFiles/server.dir/src/FileHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/FileHandler.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/FileHandler.cc -o CMakeFiles/server.dir/src/FileHandler.cc.s
+
+CMakeFiles/server.dir/src/OssManager.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/OssManager.cc.o: ../src/OssManager.cc
+CMakeFiles/server.dir/src/OssManager.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/src/OssManager.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/OssManager.cc.o -MF CMakeFiles/server.dir/src/OssManager.cc.o.d -o CMakeFiles/server.dir/src/OssManager.cc.o -c /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/OssManager.cc
+
+CMakeFiles/server.dir/src/OssManager.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/OssManager.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/OssManager.cc > CMakeFiles/server.dir/src/OssManager.cc.i
+
+CMakeFiles/server.dir/src/OssManager.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/OssManager.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/OssManager.cc -o CMakeFiles/server.dir/src/OssManager.cc.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/CryptoUtil.cc.o" \
-"CMakeFiles/server.dir/CloudDiskServer.cc.o" \
-"CMakeFiles/server.dir/main.cc.o"
+"CMakeFiles/server.dir/src/main.cc.o" \
+"CMakeFiles/server.dir/src/CloudDiskServer.cc.o" \
+"CMakeFiles/server.dir/src/CryptoUtil.cc.o" \
+"CMakeFiles/server.dir/src/UserHandler.cc.o" \
+"CMakeFiles/server.dir/src/FileHandler.cc.o" \
+"CMakeFiles/server.dir/src/OssManager.cc.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-../server: CMakeFiles/server.dir/CryptoUtil.cc.o
-../server: CMakeFiles/server.dir/CloudDiskServer.cc.o
-../server: CMakeFiles/server.dir/main.cc.o
+../server: CMakeFiles/server.dir/src/main.cc.o
+../server: CMakeFiles/server.dir/src/CloudDiskServer.cc.o
+../server: CMakeFiles/server.dir/src/CryptoUtil.cc.o
+../server: CMakeFiles/server.dir/src/UserHandler.cc.o
+../server: CMakeFiles/server.dir/src/FileHandler.cc.o
+../server: CMakeFiles/server.dir/src/OssManager.cc.o
 ../server: CMakeFiles/server.dir/build.make
 ../server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +185,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zyt/code_c_cpp/03_project/day609program/CloudDisk /home/zyt/code_c_cpp/03_project/day609program/CloudDisk /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build /home/zyt/code_c_cpp/03_project/day609program/CloudDisk/build/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zyt/code_c_cpp/03_project/day612/CloudDisk /home/zyt/code_c_cpp/03_project/day612/CloudDisk /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build /home/zyt/code_c_cpp/03_project/day612/CloudDisk/build/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 
