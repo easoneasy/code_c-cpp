@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+// 定义请求信息
+message EchoRequest
+{
+    string message = 1;
+    string name = 2;
+};
+
+// 定义响应信息
+message EchoResponse
+{
+    string message = 1;
+};
+
+// 定义一个名字为Example的服务
+// 一个service里可以有多个RCP
+service Example
+{
+    // 定义一个名字为Echo的RPC
+    // 函数名Echo，参数类型EchoRequest
+    rpc Echo(EchoRequest)
+        // 返回值类型EchoResponse
+        returns (EchoResponse);
+}

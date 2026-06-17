@@ -3,6 +3,7 @@
 #include <SimpleAmqpClient/Envelope.h>
 #include <fcntl.h>
 #include <iostream>
+#include <fstream>
 #include <nlohmann/json.hpp>
 #include <alibabacloud/oss/model/GetObjectRequest.h>
 #include <alibabacloud/oss/client/ClientConfiguration.h>
@@ -50,19 +51,19 @@ OSSManager &OSSManager::getInstance()
 OSSManager::OSSManager()
 {
     // 读取配置文件,获取OSS账号信息
-    // ifstream ifs{"config.json"};
-    // if(!ifs.is_open())
-    // {
-    //     cerr << "Error : connot open config.json" << endl;
-    //     abort();
-    // }
-    // json config = json::parse(ifs);
-    // ifs.close();
-    string endpoint = "xxx";
-    string accessKeyId = "xxxx";
-    string accessKeySecret = "xxxx";
-    _bucketName = "xxxx";
-    string region = "cn-wuhan";
+    ifstream ifs{"config.json"};
+    if(!ifs.is_open())
+    {
+        cerr << "Error : connot open config.json" << endl;
+        abort();
+    }
+    json config = json::parse(ifs);
+    ifs.close();
+    string endpoint = config["endpoint"];
+    string accessKeyId = config["accessKeyId"];
+    string accessKeySecret = config["accessKeySecret"];
+    _bucketName = config["bucketName"];
+    string region = config["region"];
 
     // 初始化网络资源
     InitializeSdk();

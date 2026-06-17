@@ -156,14 +156,14 @@ void file_upload_handler(const HttpReq *req,HttpResp *resp)
     ensure_storage_dir();
     // 本地存储文件
     string basename = STORAGE_DIR +"/" + hashcode;
-    cout << "[basename]" << basename << endl;
+    // cout << "[basename]" << basename << endl;
     resp->Save(basename,file_data);
 
     // 发送消息队列
     bool isSend = RabbitMQ::getInstance().RabbitProducer(hashcode, basename);
     if(!isSend)
     {
-        send_error(resp, 400, "发送消息失败");
+        cout << "[server] : RabbitMQ发送消息失败" << endl;
     }
 
     // 单例对象，将文件的哈希与文件内容传给单例对象

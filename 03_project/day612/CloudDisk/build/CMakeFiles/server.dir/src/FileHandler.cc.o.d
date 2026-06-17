@@ -603,8 +603,169 @@ CMakeFiles/server.dir/src/FileHandler.cc.o: \
  /usr/local/include/alibabacloud/oss/model/GenerateRTMPSignedUrlRequest.h \
  /usr/local/include/alibabacloud/oss/client/AsyncCallerContext.h \
  /usr/include/c++/11/future /usr/include/c++/11/bits/atomic_futex.h \
- /usr/local/include/wfrest/HttpDef.h /usr/local/include/wfrest/HttpMsg.h \
- /usr/local/include/wfrest/PathUtil.h \
+ /home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/../include/RabbitMQ.h \
+ /usr/local/include/SimpleAmqpClient/BasicMessage.h \
+ /usr/include/boost/cstdint.hpp /usr/include/boost/config.hpp \
+ /usr/include/boost/config/user.hpp \
+ /usr/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/include/boost/config/compiler/gcc.hpp \
+ /usr/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/c++/11/version \
+ /usr/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/include/boost/config/detail/select_platform_config.hpp \
+ /usr/include/boost/config/platform/linux.hpp \
+ /usr/include/boost/config/detail/posix_features.hpp \
+ /usr/include/boost/config/detail/suffix.hpp \
+ /usr/include/boost/config/helper_macros.hpp \
+ /usr/include/boost/make_shared.hpp \
+ /usr/include/boost/smart_ptr/make_shared.hpp \
+ /usr/include/boost/smart_ptr/make_shared_object.hpp \
+ /usr/include/boost/move/core.hpp \
+ /usr/include/boost/move/detail/config_begin.hpp \
+ /usr/include/boost/move/detail/workaround.hpp \
+ /usr/include/boost/move/detail/config_end.hpp \
+ /usr/include/boost/move/utility_core.hpp \
+ /usr/include/boost/move/detail/meta_utils.hpp \
+ /usr/include/boost/move/detail/meta_utils_core.hpp \
+ /usr/include/boost/static_assert.hpp \
+ /usr/include/boost/detail/workaround.hpp \
+ /usr/include/boost/config/workaround.hpp \
+ /usr/include/boost/smart_ptr/shared_ptr.hpp \
+ /usr/include/boost/smart_ptr/detail/shared_count.hpp \
+ /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
+ /usr/include/boost/core/typeinfo.hpp \
+ /usr/include/boost/current_function.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+ /usr/include/boost/checked_delete.hpp \
+ /usr/include/boost/core/checked_delete.hpp \
+ /usr/include/boost/core/addressof.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+ /usr/include/boost/throw_exception.hpp \
+ /usr/include/boost/assert/source_location.hpp \
+ /usr/include/boost/exception/exception.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
+ /usr/include/boost/assert.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
+ /usr/include/boost/smart_ptr/detail/yield_k.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
+ /usr/include/boost/config/pragma_message.hpp \
+ /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
+ /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+ /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_forward.hpp \
+ /usr/include/boost/type_traits/type_with_alignment.hpp \
+ /usr/include/boost/type_traits/alignment_of.hpp \
+ /usr/include/boost/type_traits/intrinsics.hpp \
+ /usr/include/boost/type_traits/detail/config.hpp \
+ /usr/include/boost/version.hpp \
+ /usr/include/boost/type_traits/integral_constant.hpp \
+ /usr/include/boost/type_traits/is_pod.hpp \
+ /usr/include/boost/type_traits/is_void.hpp \
+ /usr/include/boost/type_traits/is_scalar.hpp \
+ /usr/include/boost/type_traits/is_arithmetic.hpp \
+ /usr/include/boost/type_traits/is_integral.hpp \
+ /usr/include/boost/type_traits/is_floating_point.hpp \
+ /usr/include/boost/type_traits/is_enum.hpp \
+ /usr/include/boost/type_traits/is_pointer.hpp \
+ /usr/include/boost/type_traits/is_member_pointer.hpp \
+ /usr/include/boost/type_traits/is_member_function_pointer.hpp \
+ /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
+ /usr/include/boost/smart_ptr/make_shared_array.hpp \
+ /usr/include/boost/core/default_allocator.hpp \
+ /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
+ /usr/include/boost/core/allocator_access.hpp \
+ /usr/include/boost/core/pointer_traits.hpp \
+ /usr/include/boost/core/alloc_construct.hpp \
+ /usr/include/boost/core/noinit_adaptor.hpp \
+ /usr/include/boost/core/first_scalar.hpp \
+ /usr/include/boost/type_traits/enable_if.hpp \
+ /usr/include/boost/type_traits/extent.hpp \
+ /usr/include/boost/type_traits/is_bounded_array.hpp \
+ /usr/include/boost/type_traits/is_unbounded_array.hpp \
+ /usr/include/boost/type_traits/remove_cv.hpp \
+ /usr/include/boost/type_traits/remove_extent.hpp \
+ /usr/include/boost/scoped_ptr.hpp \
+ /usr/include/boost/smart_ptr/scoped_ptr.hpp \
+ /usr/include/boost/shared_ptr.hpp /usr/include/boost/utility.hpp \
+ /usr/include/boost/utility/base_from_member.hpp \
+ /usr/include/boost/preprocessor/arithmetic/inc.hpp \
+ /usr/include/boost/preprocessor/config/config.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
+ /usr/include/boost/preprocessor/cat.hpp \
+ /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
+ /usr/include/boost/preprocessor/control/if.hpp \
+ /usr/include/boost/preprocessor/control/iif.hpp \
+ /usr/include/boost/preprocessor/logical/bool.hpp \
+ /usr/include/boost/preprocessor/facilities/empty.hpp \
+ /usr/include/boost/preprocessor/punctuation/comma.hpp \
+ /usr/include/boost/preprocessor/repetition/repeat.hpp \
+ /usr/include/boost/preprocessor/debug/error.hpp \
+ /usr/include/boost/preprocessor/detail/auto_rec.hpp \
+ /usr/include/boost/preprocessor/tuple/eat.hpp \
+ /usr/include/boost/preprocessor/tuple/elem.hpp \
+ /usr/include/boost/preprocessor/facilities/expand.hpp \
+ /usr/include/boost/preprocessor/facilities/overload.hpp \
+ /usr/include/boost/preprocessor/variadic/size.hpp \
+ /usr/include/boost/preprocessor/tuple/rem.hpp \
+ /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
+ /usr/include/boost/preprocessor/variadic/elem.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_params.hpp \
+ /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
+ /usr/include/boost/preprocessor/arithmetic/add.hpp \
+ /usr/include/boost/preprocessor/arithmetic/dec.hpp \
+ /usr/include/boost/preprocessor/control/while.hpp \
+ /usr/include/boost/preprocessor/list/fold_left.hpp \
+ /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
+ /usr/include/boost/preprocessor/control/expr_iif.hpp \
+ /usr/include/boost/preprocessor/list/adt.hpp \
+ /usr/include/boost/preprocessor/detail/is_binary.hpp \
+ /usr/include/boost/preprocessor/detail/check.hpp \
+ /usr/include/boost/preprocessor/logical/compl.hpp \
+ /usr/include/boost/preprocessor/list/fold_right.hpp \
+ /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
+ /usr/include/boost/preprocessor/list/reverse.hpp \
+ /usr/include/boost/preprocessor/logical/bitand.hpp \
+ /usr/include/boost/preprocessor/control/detail/while.hpp \
+ /usr/include/boost/preprocessor/arithmetic/sub.hpp \
+ /usr/include/boost/type_traits/is_same.hpp \
+ /usr/include/boost/type_traits/remove_reference.hpp \
+ /usr/include/boost/utility/enable_if.hpp \
+ /usr/include/boost/core/enable_if.hpp \
+ /usr/include/boost/utility/binary.hpp \
+ /usr/include/boost/preprocessor/control/deduce_d.hpp \
+ /usr/include/boost/preprocessor/facilities/identity.hpp \
+ /usr/include/boost/preprocessor/seq/cat.hpp \
+ /usr/include/boost/preprocessor/seq/fold_left.hpp \
+ /usr/include/boost/preprocessor/seq/seq.hpp \
+ /usr/include/boost/preprocessor/seq/elem.hpp \
+ /usr/include/boost/preprocessor/seq/size.hpp \
+ /usr/include/boost/preprocessor/seq/transform.hpp \
+ /usr/include/boost/preprocessor/arithmetic/mod.hpp \
+ /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
+ /usr/include/boost/preprocessor/comparison/less_equal.hpp \
+ /usr/include/boost/preprocessor/logical/not.hpp \
+ /usr/include/boost/utility/identity_type.hpp \
+ /usr/include/boost/type_traits/function_traits.hpp \
+ /usr/include/boost/type_traits/is_function.hpp \
+ /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
+ /usr/include/boost/type_traits/add_pointer.hpp \
+ /usr/include/boost/core/noncopyable.hpp \
+ /usr/local/include/SimpleAmqpClient/Table.h \
+ /usr/local/include/SimpleAmqpClient/Util.h \
+ /usr/local/include/SimpleAmqpClient/Channel.h \
+ /usr/local/include/SimpleAmqpClient/Envelope.h \
+ /usr/include/boost/noncopyable.hpp /usr/local/include/wfrest/HttpDef.h \
+ /usr/local/include/wfrest/HttpMsg.h /usr/local/include/wfrest/PathUtil.h \
  /usr/local/include/wfrest/MysqlUtil.h \
  /usr/local/include/workflow/MySQLResult.h \
  /usr/local/include/workflow/mysql_types.h \
@@ -644,9 +805,9 @@ CMakeFiles/server.dir/src/FileHandler.cc.o: \
  /usr/include/c++/11/bits/gslice.h \
  /usr/include/c++/11/bits/gslice_array.h \
  /usr/include/c++/11/bits/mask_array.h \
- /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/version \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/filesystem \
+ /usr/include/c++/11/bits/fs_fwd.h /usr/include/c++/11/bits/fs_path.h \
+ /usr/include/c++/11/codecvt /usr/include/c++/11/bits/fs_dir.h \
+ /usr/include/c++/11/bits/fs_ops.h /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/c++/11/any

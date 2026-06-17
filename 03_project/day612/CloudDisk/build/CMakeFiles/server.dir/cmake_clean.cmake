@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/src/FileHandler.cc.o.d"
   "CMakeFiles/server.dir/src/OssManager.cc.o"
   "CMakeFiles/server.dir/src/OssManager.cc.o.d"
+  "CMakeFiles/server.dir/src/RabbitMQ.cc.o"
+  "CMakeFiles/server.dir/src/RabbitMQ.cc.o.d"
   "CMakeFiles/server.dir/src/UserHandler.cc.o"
   "CMakeFiles/server.dir/src/UserHandler.cc.o.d"
   "CMakeFiles/server.dir/src/main.cc.o"

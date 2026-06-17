@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/CryptoUtil.cc" "CMakeFiles/server.dir/src/CryptoUtil.cc.o" "gcc" "CMakeFiles/server.dir/src/CryptoUtil.cc.o.d"
   "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/FileHandler.cc" "CMakeFiles/server.dir/src/FileHandler.cc.o" "gcc" "CMakeFiles/server.dir/src/FileHandler.cc.o.d"
   "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/OssManager.cc" "CMakeFiles/server.dir/src/OssManager.cc.o" "gcc" "CMakeFiles/server.dir/src/OssManager.cc.o.d"
+  "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/RabbitMQ.cc" "CMakeFiles/server.dir/src/RabbitMQ.cc.o" "gcc" "CMakeFiles/server.dir/src/RabbitMQ.cc.o.d"
   "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/UserHandler.cc" "CMakeFiles/server.dir/src/UserHandler.cc.o" "gcc" "CMakeFiles/server.dir/src/UserHandler.cc.o.d"
   "/home/zyt/code_c_cpp/03_project/day612/CloudDisk/src/main.cc" "CMakeFiles/server.dir/src/main.cc.o" "gcc" "CMakeFiles/server.dir/src/main.cc.o.d"
   )

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/zyt/code_c_cpp/03_project/day612/CloudDisk/include
 
 CXX_FLAGS = -g -fno-rtti -std=gnu++17
 

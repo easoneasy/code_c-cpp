@@ -129,6 +129,19 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+#=============================================================================
+# Target rules for targets named oss_consumer
+
+# Build rule for target.
+oss_consumer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 oss_consumer
+.PHONY : oss_consumer
+
+# fast build rule for target.
+oss_consumer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/build
+.PHONY : oss_consumer/fast
+
 src/CloudDiskServer.o: src/CloudDiskServer.cc.o
 .PHONY : src/CloudDiskServer.o
 
@@ -159,6 +172,7 @@ src/CryptoUtil.o: src/CryptoUtil.cc.o
 # target to build an object file
 src/CryptoUtil.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CryptoUtil.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/CryptoUtil.cc.o
 .PHONY : src/CryptoUtil.cc.o
 
 src/CryptoUtil.i: src/CryptoUtil.cc.i
@@ -167,6 +181,7 @@ src/CryptoUtil.i: src/CryptoUtil.cc.i
 # target to preprocess a source file
 src/CryptoUtil.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CryptoUtil.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/CryptoUtil.cc.i
 .PHONY : src/CryptoUtil.cc.i
 
 src/CryptoUtil.s: src/CryptoUtil.cc.s
@@ -175,6 +190,7 @@ src/CryptoUtil.s: src/CryptoUtil.cc.s
 # target to generate assembly for a file
 src/CryptoUtil.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/CryptoUtil.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/CryptoUtil.cc.s
 .PHONY : src/CryptoUtil.cc.s
 
 src/FileHandler.o: src/FileHandler.cc.o
@@ -207,6 +223,7 @@ src/OssManager.o: src/OssManager.cc.o
 # target to build an object file
 src/OssManager.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OssManager.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/OssManager.cc.o
 .PHONY : src/OssManager.cc.o
 
 src/OssManager.i: src/OssManager.cc.i
@@ -215,6 +232,7 @@ src/OssManager.i: src/OssManager.cc.i
 # target to preprocess a source file
 src/OssManager.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OssManager.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/OssManager.cc.i
 .PHONY : src/OssManager.cc.i
 
 src/OssManager.s: src/OssManager.cc.s
@@ -223,7 +241,59 @@ src/OssManager.s: src/OssManager.cc.s
 # target to generate assembly for a file
 src/OssManager.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OssManager.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/OssManager.cc.s
 .PHONY : src/OssManager.cc.s
+
+src/OssWorker_Consumer.o: src/OssWorker_Consumer.cc.o
+.PHONY : src/OssWorker_Consumer.o
+
+# target to build an object file
+src/OssWorker_Consumer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/OssWorker_Consumer.cc.o
+.PHONY : src/OssWorker_Consumer.cc.o
+
+src/OssWorker_Consumer.i: src/OssWorker_Consumer.cc.i
+.PHONY : src/OssWorker_Consumer.i
+
+# target to preprocess a source file
+src/OssWorker_Consumer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/OssWorker_Consumer.cc.i
+.PHONY : src/OssWorker_Consumer.cc.i
+
+src/OssWorker_Consumer.s: src/OssWorker_Consumer.cc.s
+.PHONY : src/OssWorker_Consumer.s
+
+# target to generate assembly for a file
+src/OssWorker_Consumer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/OssWorker_Consumer.cc.s
+.PHONY : src/OssWorker_Consumer.cc.s
+
+src/RabbitMQ.o: src/RabbitMQ.cc.o
+.PHONY : src/RabbitMQ.o
+
+# target to build an object file
+src/RabbitMQ.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RabbitMQ.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/RabbitMQ.cc.o
+.PHONY : src/RabbitMQ.cc.o
+
+src/RabbitMQ.i: src/RabbitMQ.cc.i
+.PHONY : src/RabbitMQ.i
+
+# target to preprocess a source file
+src/RabbitMQ.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RabbitMQ.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/RabbitMQ.cc.i
+.PHONY : src/RabbitMQ.cc.i
+
+src/RabbitMQ.s: src/RabbitMQ.cc.s
+.PHONY : src/RabbitMQ.s
+
+# target to generate assembly for a file
+src/RabbitMQ.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RabbitMQ.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oss_consumer.dir/build.make CMakeFiles/oss_consumer.dir/src/RabbitMQ.cc.s
+.PHONY : src/RabbitMQ.cc.s
 
 src/UserHandler.o: src/UserHandler.cc.o
 .PHONY : src/UserHandler.o
@@ -281,6 +351,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... oss_consumer"
 	@echo "... server"
 	@echo "... src/CloudDiskServer.o"
 	@echo "... src/CloudDiskServer.i"
@@ -294,6 +365,12 @@ help:
 	@echo "... src/OssManager.o"
 	@echo "... src/OssManager.i"
 	@echo "... src/OssManager.s"
+	@echo "... src/OssWorker_Consumer.o"
+	@echo "... src/OssWorker_Consumer.i"
+	@echo "... src/OssWorker_Consumer.s"
+	@echo "... src/RabbitMQ.o"
+	@echo "... src/RabbitMQ.i"
+	@echo "... src/RabbitMQ.s"
 	@echo "... src/UserHandler.o"
 	@echo "... src/UserHandler.i"
 	@echo "... src/UserHandler.s"
