@@ -41,8 +41,8 @@ const 成员函数的this指针是双重const限定的指针，既不能改指�
 **const对象只能调用const的函数**
 
 ***this指针在const成员函数和非const成员函数中的类型有什么不同***
-const成员函数中，this指针的类型是`const 类名 * const`
-非const成员函数中，this指针的类型是`类名 * const`
+const成员函数中，this指针的类型是`const 类名 * const` 不可以修改指向，但是可以修改指向的内容
+非const成员函数中，this指针的类型是`类名 * const`，既不能修改指向也不能修改指向的内容
 
 ##### 对象数组
 构建对象数组形式：
