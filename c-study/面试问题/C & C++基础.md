@@ -49,3 +49,85 @@ memcpy只会拷贝基本的数据，而不会拷贝行为（拷贝构造函数�
 
 应该使用类的拷贝构造/赋值运算符/移动语义等来进行深拷贝，避免double free
 ```
+
+
+### const关键字
+const修饰的是 -- 不能通过当前名字修改对象
+- const修饰指针
+	const指谁谁不动
+```
+指向常量的指针，Pointer to constant
+const int *p
+int const *p 
+指针指向的数据不能修改，但是可以修改指针的指向
+
+指针常量 Constant pointer
+int * const p 
+指针的指向不能修改，可以修改指针指向的内容
+
+const int * const p 
+既不可以修改指向也不能修改指向的内容
+```
+
+- const修饰引用
+```
+不拷贝对象
+保证函数不会修改对象
+void print(const string &s)
+```
+
+- const修饰成员函数
+```
+const成员函数不能修改成员变量
+成员函数中原本的this指针是  int *const this 
+不能修改this指向
+
+成员函数加了const之后，变成了双重const
+void func(const int *const this);
+既不可以修改指针本身也不能修改当前对象
+
+但是const修饰的成员函数可以修改mutable修饰的成员变量，不受const限制
+
+const重载，有成员函数没有const修饰，和有const修饰
+根据调用对象是不是const来选择
+
+普通对象可以调用普通函数，也可以调用const修饰的成员函数
+是因为 普通对象的this指针，可以类型转换，
+int *const this  -> 可以转换成 int * / const int *
+所以const和非const都可以调用，但一般会优先调用非const，不用转换类型
+
+const对象只能调用const修饰的成员函数
+```
+
+### static关键字
+static改变的是生命周期、作用域、成员归属
+
+- static修饰局部变量
+```
+存放于静态区，只初始化一次
+整个程序结束才释放
+```
+
+- static修饰全局变量
+```
+只能在当前文件中访问
+不能 extern
+```
+
+- static 修饰函数
+```
+作用域也只是当前文件
+属于内部链接
+```
+
+- static成员变量
+```
+属于整个类，而不是某个对象
+```
+
+- static成员函数
+```
+不能通过  对象.  来访问
+是因为没有this指针
+所以不能访问普通成员，只能访问static成员
+```
