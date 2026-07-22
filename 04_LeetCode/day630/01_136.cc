@@ -7,6 +7,11 @@ using namespace std;
  * 找出那个只出现了一次的元素。
  */
 
+// 异或
+// a ^ a = 0
+// a ^ 0 = a
+// 异或满足交换律结合律
+
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
